@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #eee;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+.ri-menu-line{
+    display: none;
+}
+
+
+@media (max-width: 789px) {
+    header nav ul{
+        display: none;
+    }  
+    .ri-menu-line{
+        display: block;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
